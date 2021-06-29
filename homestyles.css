@@ -1,0 +1,221 @@
+
+#typewriter {
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 3s steps(30, end), blink 1s step-end infinite;
+    white-space: nowrap;
+    font-weight: 700;
+    border-right: 4px solid white;
+    box-sizing: border-box;
+    order: 1;
+    font-family: Snell Roundhand, cursive;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: white; 
+    }
+}
+
+#heading_img {
+    /* want to align this image */
+    width: 110vw;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+
+#heading_container {
+    background-color: #FFE1DE;
+    border-color: #FFE1DE;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 10%; */
+    padding-bottom: 3%;
+    margin-left: -10px;
+    margin-right: -10px;
+
+}
+
+#bio {
+    /* text-align: center; */
+    /* order: 3; */
+    font-family: Snell Roundhand, cursive;
+    font-size: 20px;
+
+}
+
+
+#aboutme_area  {
+    margin: 3% 3% 3% 3%;
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+
+#aboutme_text h3 {
+    width: 100%;
+}
+
+#aboutme_images {
+    padding-top: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#aboutme_images img {
+    /* crop the image */
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin-top: 3%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#aboutme_text {
+    padding-right: 3%;
+    text-justify: auto;
+}
+
+
+#form-wrapper {
+    margin: 3%;
+}
+
+#contact {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #FFE1DE;
+    color: #fff;
+    font-size: 1rem;
+    /* add padding to 'sign up now' */
+    padding: 3%;
+    /* add 0 margin to remove the gap between the form and the label */
+    margin: 0;
+    /* centre align the text */
+    text-align: center;
+}
+
+form {
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /* make space between top and bottom of form */
+    padding: 3%;
+}
+
+/* labels */
+label {
+    font-weight: bold;
+    color: #5e7992;
+}
+
+#message {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    margin: 2% 0% 2% 0%;
+}
+
+input {
+    box-sizing: border-box;
+    border: 1px solid #ebeeef;
+    background-color: #f9fafa;
+    /* input below */
+
+    /* ---SMALLEST PIXEL---- */
+    /* forced each input block to go onto a new row */
+    width: 100%;
+    /* make the input boxes a bit bigger */
+    height: 30px;
+    margin: 2% 0% 2% 0%;
+}
+
+/* need to centre the button */
+button {
+    /* background-color: #ffd1dc; */
+    background-color: #FFE1DE;
+    border: none;
+    color: #fff;
+    width: 100%;
+    padding: 2%;
+
+}
+
+/* media queries */
+
+@media (min-width:600px) {
+    #aboutme_area {
+        display: block;
+    }
+
+    #aboutme_images {
+        padding-top: 0%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    #aboutme_images img {
+        width: 250px;
+        height: 167px;
+    }
+
+
+}
+
+@media (min-width:900px) {
+    #aboutme_area {
+        display: block;
+    }
+
+    #aboutme_images {
+        padding-top: 0%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #aboutme_images img {
+        width: 250px;
+        height: 167px;
+    }
+
+
+   
+
+}
+
+
+
