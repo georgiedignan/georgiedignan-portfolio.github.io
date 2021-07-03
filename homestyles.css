@@ -1,36 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Mali&family=Patrick+Hand&family=Yomogi&display=swap');
 
-/* #typewriter {
-    display: inline-block;
-    font-family: Snell Roundhand, cursive;
-  	overflow: hidden;
-  	letter-spacing: 2px;
- 	animation: typing 3s steps(30, end), blink 1s step-end infinite;
-    white-space: nowrap;
-    font-weight: 700;
-    border-right: 4px solid white;
-    box-sizing: border-box;
-    order: 1;
-    
-}
-
-@keyframes typing {
-    from { 
-        width: 0% 
-    }
-    to { 
-        width: 100% 
-    }
-}
-
-@keyframes blink {
-    from, to { 
-        border-color: transparent 
-    }
-    50% { 
-        border-color: white; 
-    }
-} */
 
 #typewriter {
     padding-top: 3%;
@@ -88,8 +57,8 @@
     align-items: center;
     /* padding-top: 10%; */
     padding-bottom: 3%;
-    margin-left: -10px;
-    margin-right: -10px;
+    /* margin-left: -10px;
+    margin-right: -10px; */
     margin-top: -10px;
 
 }
@@ -100,6 +69,11 @@
     /* font-family: Snell Roundhand, cursive; */
     font-size: 20px;
 
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
 }
 
 
