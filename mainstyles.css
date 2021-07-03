@@ -1,6 +1,17 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Yomogi&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Mali&family=Patrick+Hand&family=Yomogi&display=swap');
 html {
     background-color: white;
-    font-family: Courier, monospace;
+    font-family: 'Mali', cursive;
+    /* font-family: 'Patrick Hand', cursive; */
+    /* font-family: 'Yomogi', cursive; */
+
+}
+
+body {
+    margin: 0;
 }
 
 h1 {
@@ -54,6 +65,13 @@ header a{
     font-size: 15px;
 }
 
+.selected {
+    text-decoration: underline;
+    /* color: #ffd1dc; 
+    box-shadow: 0 0 100px #FAFAD2; 
+    background: white;  */
+}
+
 .GFG:hover{
     color: #ffd1dc; 
     background: white; 
@@ -62,6 +80,17 @@ header a{
 
 footer {
     background-color: #FFE1DE;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+}
+
+#footer_container {
+    margin-left: 25%;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
 }
 
 footer p{
@@ -72,18 +101,52 @@ footer p{
 }
 
 #linkedin {
-    width: 50px;
-    height: 50px;
+    /* background-image: url(images/linkedin.svg); */
+    padding-top: 50%;
+    width: 25px;
+    height: 25px;
 }
 
 #github {
-    width: 40px;
-    height: 40px;
+    /* background-image: url(images/github1.svg); */
+    padding-top: 50%;
+    width: 25px;
+    height: 25px;
 }
+
+/* #logo {
+    background-image: url(images/logo.png);
+    display: block;
+    margin: 0 auto;
+    text-indent: -9999px;
+    width: 981px;
+    height: 180px;
+  } */
 
 @media (min-width:600px) {
     header a {
         font-size: 30px;
+    }
+
+    footer p{
+        text-align: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        /* vertical-align: center; */
+    }
+    
+    #linkedin {
+        /* background-image: url(images/linkedin.svg); */
+        padding-top: 50%;
+        width: 30px;
+        height: 30px;
+    }
+    
+    #github {
+        /* background-image: url(images/github1.svg); */
+        padding-top: 50%;
+        width: 30px;
+        height: 30px;
     }
 
 
