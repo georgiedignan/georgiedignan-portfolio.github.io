@@ -1,2 +1,7 @@
 # Portfolio-Project-Final
- html_css_project
+ 
+ This is my first ever html/css portfolio project:
+
+ Link: https://georgiedignan.github.io/
+
+ 
